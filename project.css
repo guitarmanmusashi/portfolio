@@ -1,0 +1,115 @@
+/* 전체 선택*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {  /*전체, 고정*/
+	background-color: #333;  /*배경색: 어두운 회색*/
+	color: white;  /*글자색: 흰색*/
+	text-align: center;  /*택스트 정령: 가운데*/
+}
+
+.container {
+	width: 100rem;  /*너비: 100rem*/
+	margin: 0 auto;  /*상단 하단의 여백:0, 좌우 여백: 자동, 중앙정렬*/
+	box-sizing: border-box;  /*width와 height를 계산할 때 padding과 border를 포함한 크기를 기준으로 계산*/
+	height: 100vh;  /*height: 뷰포트의 100%로 설정*/
+	display: flex;  /*자식요소 정렬*/
+	flex-direction: column;  /*자식요소 정령방향" 위에서 아래로*/
+	justify-content: space-between;  /*자식요소 사이에 균일한 간격 설정*/
+	align-items: center;  /*자식요소 align-celf를 center로 설정*/
+}
+
+header {  /*네비게이션바와 첫 페이지 이동부분, 고정*/
+	display: flex;  /*자식요소 정렬*/
+	justify-content: space-between;  /*자식요소 사이에 균일한 간격 설정*/
+	width: 100%;  /*margin, padding, border 전부 사용*/
+	align-items: center;  /*자식요소 align-celf를 center로 설정*/
+}
+
+header>p {  /*강병천의 포트폴리오*/
+	font-size: 1.5rem;  /*글자 크기: 1.5rem*/
+	font-weight: 700;  /*글자 굵기: 700(bold)*/
+}
+
+header>ul {  /*목차*/
+	display: flex;  /*자식요소 정렬*/
+}
+
+header>ul>li {  /*리스트 각각의 항목*/
+	list-style-type: none;  /*리스트 스타일: 아무것도 없음*/
+	margin-left: 1.5rem;  /*왼쪽여백: 1.5rem*/
+}
+
+header>ul>li>a {  /*리스트의 글자(Home, Profile, Project, Awards)*/
+	text-decoration: none;  /*텍스트 장식: 없음*/  
+	font-size: 1.2rem;  /*글자 크기: 1.2rem*/
+	font-weight: 800;  /*글자 굵기: 800(bold보다 좀 더 굵게)*/
+	padding-bottom: 5px;  /*아래 여백: 5px*/
+}
+
+header>ul>li>a:link, header>ul>li>a:visited, header>ul>li>a:active, header>ul>li>a:hover {  /*하이퍼링크를 항상(클릭하지 않았거나 클릭하거나 클릭하는 순간, 마우스 오버상태)*/
+	color: white;  /*글자색: 흰색*/
+}
+
+header>ul>li:nth-child(3)>a {  /*리스트의 3번째 항목 선택*/
+	border-bottom: 5px solid white;  /*아래의 경계선: 5px의 흰 실선*/
+}
+
+header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대면*/
+	border-bottom: 5px solid gray;  /*아래의 경계선:: 5px의 회색 실선*/
+}
+
+section {  /*섹션부분(내용 넣을 곳 페이지 별로 다름)*/
+	padding: 0 20rem;  /*패딩: 상단과 하단의 여백은 0, 양 옆은 20rem여백*/
+	font-size: 1.0rem;
+}
+
+section>table>thead>tr>td {
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 0.4rem;
+	border-bottom: 1px solid gray;
+}
+
+section>table>tbody>tr>td {
+	font-size: 1.2rem;
+	padding: 0.4rem;
+	border-bottom: 1px solid gray;
+}
+
+section>table>tbody>tr>td>a {
+	text-decoration: none;
+}
+
+section>table>tbody>tr>td>a:link {
+	color: white;
+}
+section>table>tbody>tr>td>a:visited {
+	color: white;
+}
+section>table>tbody>tr>td>a:active {
+	color: white;
+}
+
+section>table>tbody>tr>td:nth-child(2) {
+	text-align: left;
+}
+
+
+section>table>tbutton {
+	border_bottom: none;
+}
+
+
+footer {  /*맨 아래줄, 고정*/
+	margin-bottom: 2rem;  /*아래여백: 2rem*/
+	font-size: 1.1rem;  /*글자크기: 1.1rem*/
+	text-decoration: none;
+}
+
+footer>p>a:link , footer>p>a:visited, footer>p>a:active, footer>p>a:hover{  /*하이퍼링크를 항상(클릭하지 않았거나 클릭하거나 클릭하는 순간, 마우스 오버상태)*/
+	color: white;  /*글자색: 흰색*/
+	text-decoration: none;  /*텍스트 장식: 없음*/
+}
