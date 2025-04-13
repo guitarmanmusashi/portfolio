@@ -66,40 +66,8 @@ section {  /*섹션부분(내용 넣을 곳 페이지 별로 다름)*/
 	font-size: 1.0rem;
 }
 
-section>table>thead>tr>td {
-	font-size: 1.6rem;
-	font-weight: bold;
-	padding: 0.4rem;
-	border-bottom: 1px solid gray;
-}
-
-section>table>tbody>tr>td {
-	font-size: 1.2rem;
-	padding: 0.4rem;
-	border-bottom: 1px solid gray;
-}
-
-section>table>tbody>tr>td>a {
-	text-decoration: none;
-}
-
-section>table>tbody>tr>td>a:link {
-	color: white;
-}
-section>table>tbody>tr>td>a:visited {
-	color: white;
-}
-section>table>tbody>tr>td>a:active {
-	color: white;
-}
-
-section>table>tbody>tr>td:nth-child(2) {
-	text-align: left;
-}
-
-
-section>table>tbutton {
-	border_bottom: none;
+section>table {
+	width: 50%;
 }
 
 
