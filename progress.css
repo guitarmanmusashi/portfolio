@@ -62,7 +62,7 @@ header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대�
 }
 
 .btnBack.btnPush {
-	box-shadow: 0px 5px 0px 0px #007144;
+	box-shadow: 0px 5px 0px 0px #ffffff;
   }
   
   .btnPush:hover {
@@ -71,7 +71,7 @@ header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대�
   }
   
   .btnBack.btnPush:hover {
-	box-shadow: 0px 0px 0px 0px #007144;
+	box-shadow: 0px 0px 0px 0px #ffffff;
   }
 
 
