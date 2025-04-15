@@ -61,10 +61,18 @@ header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대�
 	border-bottom: 5px solid gray;  /*아래의 경계선:: 5px의 회색 실선*/
 }
 
-section {  /*섹션부분(내용 넣을 곳 페이지 별로 다름)*/
-	padding: 0 20rem;  /*패딩: 상단과 하단의 여백은 0, 양 옆은 20rem여백*/
-	font-size: 1.0rem;
-}
+.btnBack.btnPush {
+	box-shadow: 0px 5px 0px 0px #007144;
+  }
+  
+  .btnPush:hover {
+	margin-top: 15px;
+	margin-bottom: 5px;
+  }
+  
+  .btnBack.btnPush:hover {
+	box-shadow: 0px 0px 0px 0px #007144;
+  }
 
 
 footer {  /*맨 아래줄, 고정*/
