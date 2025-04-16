@@ -64,7 +64,59 @@ header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대�
 	border-bottom: 5px solid gray;  /*아래의 경계선:: 5px의 회색 실선*/
 }
 
+.board {
+    background-color: #444444;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
 
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+    background-color: #555555;
+}
+
+td {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* 버튼 스타일 */
+.create-btn, .submit-btn, .back-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.create-btn:hover, .submit-btn:hover, .back-btn:hover {
+    background-color: #45a049;
+}
 
 footer {  /*맨 아래줄, 고정*/
 	margin-bottom: 2rem;  /*아래여백: 2rem*/
