@@ -48,14 +48,10 @@ header>ul>li>a {
 	padding-bottom: 5px;
 }
 
-header>ul>li>a:link {
-	color: white;
-}
-header>ul>li>a:visited {
-	color: white;
-}
-header>ul>li>a: active {
-	color: white;
+header>ul>li>a:visited,
+header>ul>li>a:link,
+header>ul>li>a:active {
+    color: white;
 }
 
 header>ul>li:nth-child(2)>a {
@@ -92,27 +88,9 @@ section>div.right>p {
 	font-size: 2rem;
 }
 
-section>table, td, th{
-	border-width: 0.1rem;
-	border-style: solid;
-	border-color: white;
-	border-collapse: collapse;
-	font-size: 1.2rem;
-}
-
 section>p {
 	font-size: 1.3rem;
 }
-
-section>table:nth-child(2) {
-	margin-bottom: 1rem;
-}
-
-section>table:nth-child(4) {
-	margin-bottom: 1rem;
-}
-
-
 
 footer {
 	margin-bottom: 2rem;
@@ -124,12 +102,8 @@ footer>p>a {
 	color: white;
 }
 
-footer>p>a:link {
-	color: white;
-}
-footer>p>a:visited {
-	color: white;
-}
-footer>p>a: active {
+footer>p>a:link,
+footer>p>a:visited,
+footer>p>a:active {
 	color: white;
 }
