@@ -50,7 +50,8 @@ header>ul>li>a {
 
 header>ul>li>a:visited,
 header>ul>li>a:link,
-header>ul>li>a:active {
+header>ul>li>a:active,
+header>ul>li>a:hover{
     color: white;
 }
 
@@ -104,6 +105,7 @@ footer>p>a {
 
 footer>p>a:link,
 footer>p>a:visited,
-footer>p>a:active {
-	color: white;
+footer>p>a:active,
+footer>p>a:hover{  /*하이퍼링크를 항상(클릭하지 않았거나 클릭하거나 클릭하는 순간, 마우스 오버상태)*/
+	color: white;  /*글자색: 흰색*/
 }
