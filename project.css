@@ -61,7 +61,7 @@ header>ul>li>a:hover {  /*하이퍼링크를 항상(클릭하지 않았거나 �
 }
 
 header>ul>li:nth-child(3)>a {  /*리스트의 3번째 항목 선택*/
-	border-bottom: 5px solid white;  /*아래의 경계선: 5px의 흰 실선*/
+	border-bottom: 5px solid rgb(0, 0, 0);  /*아래의 경계선: 5px의 흰 실선*/
 }
 
 header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대면*/

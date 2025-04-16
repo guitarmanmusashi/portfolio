@@ -55,7 +55,7 @@ header>ul>li>a:hover{
     color: white;
 }
 
-header>ul>li:nth-child(4)>a {
+header>ul>li:nth-child(2)>a {
 	border-bottom: 5px solid black;
 }
 
