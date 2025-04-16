@@ -1,4 +1,8 @@
-/* 전체 선택*/
+html, body {
+    height: 100%;      /* 뷰포트의 100% 높이 */
+    margin: 0;
+    overflow: hidden;  /* 화면 스크롤 숨기기 */
+}
 * {
 	padding: 0;
 	margin: 0;
@@ -64,23 +68,31 @@ header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대�
 	border-bottom: 5px solid gray;  /*아래의 경계선:: 5px의 회색 실선*/
 }
 
-.board {
-    background-color: #444444;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    width: 80%;
-    max-width: 900px;
-    text-align: center;
+section {
+	padding: 0 20rem;
+	text-align: center;
+}
+
+
+/* 테이블 스타일 */
+
+
+/* 테이블을 감싸는 div */
+.list {
+    width: 50%;             /* 테이블과 같은 폭 */
+    margin: 0 auto;         /* 중앙 정렬 */
+    height: 300px;          /* 테이블의 높이 설정 (필요에 맞게 조정) */
+    overflow-y: auto;       /* 세로 스크롤을 자동으로 활성화 */
+    border: 1px solid #ddd; /* 테이블 주변에 테두리 추가 (선택사항) */
 }
 
 /* 테이블 스타일 */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    width: 100%;            /* 테이블 너비를 100%로 설정 */
+    border-collapse: collapse; /* 테이블 셀 테두리 겹침 방지 */
 }
 
+/* 테이블 헤더와 데이터 셀 */
 th, td {
     padding: 12px;
     border: 1px solid #ddd;
@@ -88,7 +100,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #898989;
     color: white;
     font-size: 1.2em;
 }
@@ -103,9 +115,9 @@ td {
 }
 
 /* 버튼 스타일 */
-.create-btn, .submit-btn, .back-btn {
+.createbtn{
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #898989;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -114,8 +126,14 @@ td {
     font-size: 1.1em;
 }
 
-.create-btn:hover, .submit-btn:hover, .back-btn:hover {
-    background-color: #45a049;
+.button-wrapper {
+    width: 50%;          /* 테이블과 같은 폭 */
+    margin: 0 auto;      /* 가운데 정렬 */
+    text-align: right;   /* 내부 요소 오른쪽 정렬 */
+}
+
+.createbtn:hover{
+    background-color: #898989;
 }
 
 footer {  /*맨 아래줄, 고정*/
