@@ -54,11 +54,11 @@ header>ul>li>a:link {
 header>ul>li>a:visited {
 	color: white;
 }
-header>ul>li>a: active {
+header>ul>li>a:active {
 	color: white;
 }
 
-header>ul>li:nth-child(3)>a {
+header>ul>li:nth-child(4)>a {
 	border-bottom: 5px solid black;
 }
 
