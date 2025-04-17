@@ -69,7 +69,8 @@ header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대�
 }
 
 section {
-	padding: 0 20rem;
+	margin: 0 5rem;
+	padding: 0 5rem;
 	text-align: center;
 }
 
@@ -79,7 +80,7 @@ section {
 
 /* 테이블을 감싸는 div */
 .list {
-    width: 300%;             /* 테이블과 같은 폭 */
+    width: 150vh;             /* 테이블과 같은 폭 */
     margin: auto;         /* 중앙 정렬 */
     height: 300px;          /* 테이블의 높이 설정 (필요에 맞게 조정) */
     overflow-y: auto;       /* 세로 스크롤을 자동으로 활성화 */
@@ -115,19 +116,19 @@ td {
 }
 
 /* 버튼 스타일 */
-.createbtn{
+.createbtn {
     display: inline-block;
     background-color: #898989;
     color: white;
-    padding: 10px 20px;
+    padding: 0.93vh 1.85vh;  /* 10px, 20px */
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 1.1em;
+    border-radius: 0.46vh;   /* 5px */
+    margin-top: 1.85vh;      /* 20px */
+    font-size: 1.1em;        /* em은 상대 단위라 유지하는 게 좋음 */
 }
 
 .button-wrapper {
-    width: 50%;          /* 테이블과 같은 폭 */
+    width: 100%;          /* 테이블과 같은 폭 */
     margin: 0 auto;      /* 가운데 정렬 */
     text-align: right;   /* 내부 요소 오른쪽 정렬 */
 }
