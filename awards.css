@@ -94,7 +94,7 @@ section>table>tbody>tr>td>a:link {
 section>table>tbody>tr>td>a:visited {
 	color: white;
 }
-section>table>tbody>tr>td>a: active {
+section>table>tbody>tr>td>a:active {
 	color: white;
 }
 
@@ -118,6 +118,6 @@ footer>p>a:link {
 footer>p>a:visited {
 	color: white;
 }
-footer>p>a: active {
+footer>p>a:active {
 	color: white;
 }
