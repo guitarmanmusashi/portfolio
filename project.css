@@ -81,7 +81,7 @@ section {
 /* 테이블을 감싸는 div */
 .list {
     width: 150vh;             /* 테이블과 같은 폭 */
-    margin: auto;         /* 중앙 정렬 */
+    margin: 0 auto;         /* 중앙 정렬 */
     height: 300px;          /* 테이블의 높이 설정 (필요에 맞게 조정) */
     overflow-y: auto;       /* 세로 스크롤을 자동으로 활성화 */
     border: 1px solid #ddd; /* 테이블 주변에 테두리 추가 (선택사항) */
