@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;      /* 뷰포트의 100% 높이 */
+    margin: 0;
+    overflow: hidden;  /* 화면 스크롤 숨기기 */
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {  /*전체, 고정*/
+	background-color: #333;  /*배경색: 어두운 회색*/
+	color: white;  /*글자색: 흰색*/
+	text-align: center;  /*택스트 정령: 가운데*/
+}
+
+.container {
+	width: 100rem;  /*너비: 100rem*/
+	margin: 0 auto;  /*상단 하단의 여백:0, 좌우 여백: 자동, 중앙정렬*/
+	box-sizing: border-box;  /*width와 height를 계산할 때 padding과 border를 포함한 크기를 기준으로 계산*/
+	height: 100vh;  /*height: 뷰포트의 100%로 설정*/
+	display: flex;  /*자식요소 정렬*/
+	flex-direction: column;  /*자식요소 정령방향" 위에서 아래로*/
+	justify-content: space-between;  /*자식요소 사이에 균일한 간격 설정*/
+	align-items: center;  /*자식요소 align-celf를 center로 설정*/
+}
+
+header {  /*네비게이션바와 첫 페이지 이동부분, 고정*/
+	display: flex;  /*자식요소 정렬*/
+	justify-content: space-between;  /*자식요소 사이에 균일한 간격 설정*/
+	width: 100%;  /*margin, padding, border 전부 사용*/
+	align-items: center;  /*자식요소 align-celf를 center로 설정*/
+}
+
+header>p {  /*강병천의 포트폴리오*/
+	font-size: 1.5rem;  /*글자 크기: 1.5rem*/
+	font-weight: 700;  /*글자 굵기: 700(bold)*/
+}
+
+header>ul {  /*목차*/
+	display: flex;  /*자식요소 정렬*/
+}
+
+header>ul>li {  /*리스트 각각의 항목*/
+	list-style-type: none;  /*리스트 스타일: 아무것도 없음*/
+	margin-left: 1.5rem;  /*왼쪽여백: 1.5rem*/
+}
+
+header>ul>li>a {  /*리스트의 글자(Home, Profile, Project, Awards)*/
+	text-decoration: none;  /*텍스트 장식: 없음*/  
+	font-size: 1.2rem;  /*글자 크기: 1.2rem*/
+	font-weight: 800;  /*글자 굵기: 800(bold보다 좀 더 굵게)*/
+	padding-bottom: 5px;  /*아래 여백: 5px*/
+}
+
+header>ul>li>a:link,
+header>ul>li>a:visited,
+header>ul>li>a:active,
+header>ul>li>a:hover {  /*하이퍼링크를 항상(클릭하지 않았거나 클릭하거나 클릭하는 순간, 마우스 오버상태)*/
+	color: white;  /*글자색: 흰색*/
+}
+
+header>ul>li:nth-child(3)>a {  /*리스트의 3번째 항목 선택*/
+	border-bottom: 5px solid rgb(0, 0, 0);  /*아래의 경계선: 5px의 흰 실선*/
+}
+
+header>ul>li>a:hover {  /*리스트 모든 항목에 마우스를 가져다 대면*/
+	border-bottom: 5px solid gray;  /*아래의 경계선:: 5px의 회색 실선*/
+}
+
+section {
+	margin: 0 5rem;
+	padding: 0 5rem;
+	text-align: center;
+}
+
+
+/* 테이블 스타일 */
+
+
+/* 테이블을 감싸는 div */
+.list {
+    width: 150vh;             /* 테이블과 같은 폭 */
+    margin: 0 auto;         /* 중앙 정렬 */
+    height: 300px;          /* 테이블의 높이 설정 (필요에 맞게 조정) */
+    overflow-y: auto;       /* 세로 스크롤을 자동으로 활성화 */
+    border: 1px solid #ddd; /* 테이블 주변에 테두리 추가 (선택사항) */
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;            /* 테이블 너비를 100%로 설정 */
+    border-collapse: collapse; /* 테이블 셀 테두리 겹침 방지 */
+}
+
+/* 테이블 헤더와 데이터 셀 */
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #898989;
+    color: white;
+    font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+    background-color: #555555;
+}
+
+td {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* 버튼 스타일 */
+.createbtn {
+    display: inline-block;
+    background-color: #898989;
+    color: white;
+    padding: 0.93vh 1.85vh;  /* 10px, 20px */
+    text-decoration: none;
+    border-radius: 0.46vh;   /* 5px */
+    margin-top: 1.85vh;      /* 20px */
+    font-size: 1.1em;        /* em은 상대 단위라 유지하는 게 좋음 */
+}
+
+.button-wrapper {
+    width: 100%;          /* 테이블과 같은 폭 */
+    margin: 0 auto;      /* 가운데 정렬 */
+    text-align: right;   /* 내부 요소 오른쪽 정렬 */
+}
+
+.createbtn:hover{
+    background-color: #898989;
+}
+
+footer {  /*맨 아래줄, 고정*/
+	margin-bottom: 2rem;  /*아래여백: 2rem*/
+	font-size: 1.1rem;  /*글자크기: 1.1rem*/
+	text-decoration: none;
+}
+
+footer>p>a:link,
+footer>p>a:visited,
+footer>p>a:active,
+footer>p>a:hover{  /*하이퍼링크를 항상(클릭하지 않았거나 클릭하거나 클릭하는 순간, 마우스 오버상태)*/
+	color: white;  /*글자색: 흰색*/
+}
