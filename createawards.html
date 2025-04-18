@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="awards.css">
+	<link rel="stylesheet" href="createawards.css">
 	<title>강병천의 포트폴리오</title>
 </head>
 <body>
@@ -30,19 +30,25 @@
 				<table>
 					<thead>
 						<tr>
-							<th>번호</th>
 							<th>대회명</th>
-							<th>수상등급</th>
-							<th>날짜</th>
+							<td><input type="text" name="name"></td>
 						</tr>
 					</thead>
 					<tbody>
-
+                        <tr>
+                            <th>수상등급</th>
+                            <td><input type="text" name="level"></td>
+                        </tr>
+						<tr>
+                            <th>날짜</th>
+                            <td><input type="text" name="day"></td>
+                        </tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="button-wrapper">
-				<a href="createawards.html" class="createbtn">새로운 수상내역 생성</a>
+				<a href="awards.html" class="createbtn"><p onclick="alert('name이 생성되었습니다')">생성</p></a>
+				<a href="awards.html" class="cancelbtn">취소</a>
 			</div>
 		</section>
 		<footer>
