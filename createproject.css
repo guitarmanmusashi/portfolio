@@ -76,47 +76,56 @@ section {
 
 
 /* 테이블 스타일 */
-
-
-/* 테이블을 감싸는 div */
-.list {
-    width: 150vh;             /* 테이블과 같은 폭 */
-    margin: 0 auto;         /* 중앙 정렬 */
-    height: 300px;          /* 테이블의 높이 설정 (필요에 맞게 조정) */
-    overflow-y: auto;       /* 세로 스크롤을 자동으로 활성화 */
-    border: 1px solid #ddd; /* 테이블 주변에 테두리 추가 (선택사항) */
-}
-
-/* 테이블 스타일 */
 table {
-    width: 100%;            /* 테이블 너비를 100%로 설정 */
-    border-collapse: collapse; /* 테이블 셀 테두리 겹침 방지 */
-}
-
-/* 테이블 헤더와 데이터 셀 */
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-th {
-    background-color: #898989;
-    color: white;
-    font-size: 1.2em;
-}
-
-tr:nth-child(even) {
-    background-color: #555555;
-}
-
-td {
-    font-size: 1.1em;
-    color: #ffffff;
-}
+	border-collapse: collapse;
+	width: 60rem;
+	background-color: #444444;
+  }
+  
+  th, td {
+	text-align: center;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+  }
+  
+  th {
+	background-color: #555555;
+	font-weight: bold;
+	font-size: 3vh;
+	padding: 1vh 2vh;       /* 패딩 줄임 */
+  	white-space: nowrap;      /* 글자 줄바꿈 방지 */
+  	width: 1%;
+  }
+  td {
+	padding:0;
+	background-color: #2a2a2a;
+  	color: #ffffff;
+  	border: 0.1vh solid #555555;
+  	border-radius: 0.5vh;
+  }
+  input[type="text"] {
+	background-color: #2a2a2a;
+	width: 98%;
+	height: 98%;
+	color: #ffffff;
+	font-size: 2.2vh;
+  }
 
 /* 버튼 스타일 */
 .createbtn {
+    display: inline-block;
+    background-color: #898989;
+    color: white;
+    padding: 0.93vh 1.85vh;  /* 10px, 20px */
+    text-decoration: none;
+    border-radius: 0.46vh;   /* 5px */
+    margin-top: 1.85vh;      /* 20px */
+    font-size: 1.1em;        /* em은 상대 단위라 유지하는 게 좋음 */
+}
+
+.cancelbtn {
     display: inline-block;
     background-color: #898989;
     color: white;
